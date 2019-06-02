@@ -20,10 +20,9 @@
         <div class="uk-navbar-left" style="margin-right:20px;">
             <ul class="uk-navbar-nav">
                 <li>
-                    <a class="logo" href="#" onclick="window.location.reload()">
-                        <span uk-icon='icon: social; ratio: 1.5'></span>
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        Hand Recognition
+                    <a href="#" onclick="window.location.reload()">
+                        <img class="logo" src="./img/eye_i_logo.png">
+                        <h6 class="logo-text">Machine Learning KNN</h6> 
                     </a>
                 </li>
             </ul>
@@ -35,11 +34,10 @@
                     <button class="uk-button uk-button-default" uk-margin-right onclick="window.location.reload()">
                         <span uk-icon="icon: refresh"></span>
                     </button>
-                    <div class="uk-button-group" >
+                    <div class="uk-button-group">
                         <!-- btn: Camera Switch -->
                         <div class="uk-inline">
-                            <button class="uk-button uk-button-default" uk-margin-left type="button"><span
-                                    uk-icon="icon: video-camera"></span></button>
+                            <button class="uk-button uk-button-default" uk-margin-left type="button"><span uk-icon="icon: video-camera"></span></button>
                             <div uk-dropdown="mode: click; boundary: ! .uk-button-group; boundary-align: true;">
                                 <ul class="uk-nav uk-dropdown-nav">
                                     <li>
@@ -57,8 +55,7 @@
                         </div>
                         <!-- btn: Save / Load -->
                         <div class="uk-inline">
-                            <button class="uk-button uk-button-default" type="button"><span
-                                    uk-icon="icon: database"></span></button>
+                            <button class="uk-button uk-button-default" type="button"><span uk-icon="icon: database"></span></button>
                             <div uk-dropdown="mode: click; boundary: ! .uk-button-group; boundary-align: true;">
                                 <ul class="uk-nav uk-dropdown-nav">
                                     <li>
@@ -124,8 +121,8 @@
                                     <div class="progress-container">
                                         <!-- progress-standby -->
                                         <div class="progress">
-                                            <div id="progress-standby" class="progress-bar bg-secondary"
-                                                role="progressbar" aria-valuenow="25"></div>
+                                            <div id="progress-standby" class="progress-bar bg-secondary" role="progressbar"
+                                                aria-valuenow="25"></div>
                                         </div>
 
                                         <!-- progress-HandA -->
@@ -162,14 +159,12 @@
                                     <br>
                                     ( A )
                                 </a>
-                                <a class="progress-label uk-button uk-button-text uk-inline"
-                                    style="margin-left:50px !important;">
+                                <a class="progress-label uk-button uk-button-text uk-inline" style="margin-left:50px !important;">
                                     <div id="percentHandB">0 &nbsp;%</div>
                                     <br>
                                     ( B )
                                 </a>
-                                <a class="progress-label uk-button uk-button-text uk-inline"
-                                    style="margin-left:50px !important;">
+                                <a class="progress-label uk-button uk-button-text uk-inline" style="margin-left:50px !important;">
                                     <div id="percentHandC">0 &nbsp;%</div>
                                     <br>
                                     ( C )
@@ -206,10 +201,8 @@
                                 </div>
                             </div>
                             <div class="uk-card-footer">
-                                <button id="btn-a"
-                                    class="uk-button uk-button-secondary uk-width-1-1 uk-margin-small-bottom"
-                                    onmousedown="inter=setInterval(addLabelA, 1*100);"
-                                    onmouseup="clearInterval(inter);">
+                                <button id="btn-a" class="uk-button uk-button-secondary uk-width-1-1 uk-margin-small-bottom"
+                                    onmousedown="inter=setInterval(addLabelA, 1*100);" onmouseup="clearInterval(inter);">
                                     Standby <span>x</span> <span id="span-sampleA-count">0</span>
                                 </button>
                             </div>
@@ -232,10 +225,8 @@
                                 </div>
                             </div>
                             <div class="uk-card-footer">
-                                <button id="btn-b"
-                                    class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom"
-                                    onmousedown="inter=setInterval(addLabelB, 1*100);"
-                                    onmouseup="clearInterval(inter);">
+                                <button id="btn-b" class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom"
+                                    onmousedown="inter=setInterval(addLabelB, 1*100);" onmouseup="clearInterval(inter);">
                                     Position A <span>x</span> <span id="span-sampleB-count">0</span>
                                 </button>
                             </div>
@@ -258,10 +249,8 @@
                                 </div>
                             </div>
                             <div class="uk-card-footer">
-                                <button id="btn-c"
-                                    class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom"
-                                    onmousedown="inter=setInterval(addLabelC, 1*100);"
-                                    onmouseup="clearInterval(inter);">
+                                <button id="btn-c" class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom"
+                                    onmousedown="inter=setInterval(addLabelC, 1*100);" onmouseup="clearInterval(inter);">
                                     Position B <span>x</span> <span id="span-sampleC-count">0</span>
                                 </button>
                             </div>
@@ -284,10 +273,8 @@
                                 </div>
                             </div>
                             <div class="uk-card-footer">
-                                <button id="btn-d"
-                                    class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom"
-                                    onmousedown="inter=setInterval(addLabelD, 1*100);"
-                                    onmouseup="clearInterval(inter);">
+                                <button id="btn-d" class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom"
+                                    onmousedown="inter=setInterval(addLabelD, 1*100);" onmouseup="clearInterval(inter);">
                                     Position C <span>x</span> <span id="span-sampleD-count">0</span>
                                 </button>
                             </div>
